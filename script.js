@@ -6,7 +6,7 @@
     const desktopHeader = document.querySelector("#dayDesktopHeader"); 
     const body = document.querySelector("body");
     const banner = document.querySelector("#banner button img");
-    const bannerRays = document.querySelector("#banner #rays");
+    const bannerRays = document.querySelector("#banner #outsiderays");
     const sections = document.querySelectorAll("section")
     let mode = "light";
     const footer = document.querySelector("footer"); 
@@ -18,7 +18,7 @@
             header.src = "images/mobile_logo_night.svg"
             banner.src = "images/moon.png"
             desktopHeader.srcset = "images/desktop_logo_night.svg"
-            bannerRays.src = "images/stars.png"
+            bannerRays.src = "images/small_stars.png"
 
             footer.innerHTML = `<p>✨💫 DESIGNED & CODED BY <a href="mailto:&#118;&#121;&#108;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">VICKY LI</a> 💫✨ </p>`;
             

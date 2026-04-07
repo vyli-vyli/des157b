@@ -41,18 +41,39 @@ header {
 }
 
 #banner #rays {
-    position: relative; 
-    top: -7px;
-    animation: sunrays 10s linear infinite;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    animation: sunrays 25s linear infinite;
 }
 
 @keyframes sunrays {
     0% {
-        transform: rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
     } 
     100% {
-        transform: rotate(100deg);
+        transform: translate(-50%, -50%) rotate(360deg);
     }
+}
+
+#banner #outsiderays {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    animation: smallrays 20s linear infinite;
+}
+
+@keyframes smallrays {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } 
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+main {
+    padding-top: 375px;
 }
 
 h3 {
@@ -101,8 +122,23 @@ html .switch {
         display: flex;
     }
 
+    header {
+        padding: 24px 0;
+    }
+
     picture {
         max-width: 300px;
+    }
+
+    #banner {
+        position: relative;
+        width: 100%;
+        top: 25%; 
+        left: 5%;
+    }
+
+    main {
+        padding-top: 0;
     }
 
     aside {
@@ -121,10 +157,15 @@ html .switch {
         grid-template-columns: 1fr 1fr;
     }
 
+    #projects {
+        padding: 20px;
+    }
+
     #projects div {
         background-color: rgb(255, 255, 255, 0.25);
         border-radius: 25px;
-        margin: 20px 10px 10px 10px;
+        margin: 10px;
+        padding-bottom: 12px;
     }
 
     footer {
