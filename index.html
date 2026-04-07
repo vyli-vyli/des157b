@@ -9,8 +9,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bebas+Neue&family=Lobster&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
-    <!-- My Styles -->
+    <!-- My Styles --> 
     <link href="styles.css" rel="stylesheet">
 
     <!-- Meta tag for mobile support -->
@@ -25,25 +28,26 @@
 
     <div id="container">
 
-        <header>
-            <h1>Vicky Li</h1>
+        <aside>
+            <header>
+                <picture>
+                    <source id="dayDesktopHeader" media="(min-width: 650px)" srcset="images/desktop_logo.svg">
+                    <img src="images/mobile_logo.svg">
+                </picture>
+            </header>
 
-            <h2>DES 157B - Interactive Media III</h2>
-            <h2>Spring 2026</h2> 
-            
-        </header>
-
-        <div id="banner">
-            <h3>This is my banner!</h3>
-            <button>switch</button>
-        </div>
+            <div id="banner">
+                <button><img src="images/sun_base.png"></button>
+                <img id="rays" src="images/sun_rays.png">
+            </div>
+        </aside>
 
         <main>
 
             <section id="projects">
 
                 <div>
-                    <h3>Ministudios</h3>
+                    <h3>ministudios</h3>
                     <nav>
                         <ul>
                             <li><a href="#">Blockbuster Video</a></li>
@@ -52,7 +56,7 @@
                         </ul>
                     </nav>
                 
-                    <h3>Toolkit</h3>
+                    <h3>toolkit</h3>
                     <nav>
                         <ul>
                             <li><a href="#">Friends List</a></li>
@@ -61,7 +65,7 @@
                 </div>
             
                 <div>
-                <h3>Research</h3>
+                <h3>research</h3>
                     <nav>
                         <ul>
                             <li><a href="#">Brainstorm</a></li>
@@ -74,9 +78,9 @@
                 </div>
         
                 <div>
-                    <h3>Development</h3>
+                    <h3>development</h3>
                     <nav>
-                        <ul>
+                        <ul id="development">
                             <li><a href="#">Proposal</a></li>
                             <li><a href="#">Sketches</a></li>
                             <li><a href="#">User Flows</a></li>
@@ -88,24 +92,24 @@
                         </ul>
                     </nav>
                 </div>
-            </section>
-
-            <section id="capstone">
-                <h3>Capstone</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Case Study</a></li>
-                        <li><a href="#">Project</a></li>
-                    </ul>
-                </nav>
-            </section>
-
             
-
+                <div>
+                    <h3>capstone</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Case Study</a></li>
+                            <li><a href="#">Project</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
         </main>
+        
 
     </div>
-
+        <footer>
+            <p>☀️🌻 DESIGNED & CODED BY <a href="mailto:&#118;&#121;&#108;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">VICKY LI</a> 🌻☀️ </p>
+        </footer>
 </body>
 
 </html>

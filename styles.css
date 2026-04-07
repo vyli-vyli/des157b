@@ -17,11 +17,117 @@ ul {
 /* end css reset */ 
 
 html {
-    background: linear-gradient(135deg, rgba(235, 104, 89, 1) 5%, rgba(253, 162, 107, 1) 56%, rgba(253, 187, 99, 1) 100%);
-    height: 100%;
+    background: linear-gradient(180deg, rgba(235, 104, 89, 1) 5%, rgba(253, 162, 107, 1) 56%, rgba(253, 187, 99, 1) 100%);
+}
+
+html, body {
+    width: 100%;
+    min-width: 393px;
 }
 
 header {
     padding: 24px;
 }
 
+#banner button{ 
+    background-color: transparent;
+    border: none; 
+
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#banner #rays {
+    position: relative; 
+    top: -7px;
+    animation: sunrays 10s linear infinite;
+}
+
+@keyframes sunrays {
+    0% {
+        transform: rotate(0deg);
+    } 
+    100% {
+        transform: rotate(100deg);
+    }
+}
+
+h3 {
+    font-family: "Lobster";
+    font-size: 36px;
+    color: white; 
+    -webkit-text-stroke: 10px #F0782E;
+    paint-order: stroke fill;
+    text-align: center;
+    padding: 24px;
+}
+
+nav ul li { 
+    font-family: "Mohave";
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    font-family: "Bebas Neue";
+    color: white;
+    padding: 24px 0 12px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+html .switch {
+    background: linear-gradient(180deg, rgba(41, 18, 79, 1) 0%, rgba(48, 37, 104, 1) 20%, rgba(88, 65, 137, 1) 60%, rgba(129, 97, 181, 1) 80%, rgba(194, 158, 219, 1) 100%);
+}
+
+.switch h3{
+    -webkit-text-stroke: 0 transparent;
+}
+
+@media only screen and (min-width: 650px) {
+    #container {
+        display: flex;
+    }
+
+    picture {
+        max-width: 300px;
+    }
+
+    aside {
+        flex: 1; 
+    }
+
+    #projects {
+        flex: 2;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #development {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #projects div {
+        background-color: rgb(255, 255, 255, 0.25);
+        border-radius: 25px;
+        margin: 20px 10px 10px 10px;
+    }
+
+    footer {
+        font-size: 24px;
+    }
+}
