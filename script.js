@@ -20,7 +20,7 @@
             desktopHeader.srcset = "images/desktop_logo_night.svg"
             bannerRays.src = "images/small_stars.png"
 
-            footer.innerHTML = `<p>✨💫 DESIGNED & CODED BY <a href="mailto:&#118;&#121;&#108;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">VICKY LI</a> 💫✨ </p>`;
+            footer.innerHTML = `<p>✨💫 DESIGN & CODE BY <a href="mailto:&#118;&#121;&#108;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">VICKY LI</a> 💫✨ </p>`;
             
             mode = 'dark';
         } else {
@@ -31,7 +31,7 @@
             banner.src = "images/sun_base.png"
             bannerRays.src = "images/sun_rays.png"
             
-            footer.innerHTML = `<p>☀️🌻DESIGNED & CODED BY <a href="mailto:&#118;&#121;&#108;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">VICKY LI</a> 🌻☀️ </p>`;
+            footer.innerHTML = `<p>☀️🌻DESIGN & CODE BY <a href="mailto:&#118;&#121;&#108;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">VICKY LI</a> 🌻☀️ </p>`;
 
             mode = 'light'
         }
