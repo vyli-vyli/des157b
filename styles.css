@@ -98,6 +98,14 @@ nav ul li a {
     color: white;
 }
 
+nav ul li a:hover {
+    color: #B3473B;
+}
+
+.switch nav ul li a:hover {
+    color: #29124F;
+}
+
 footer {
     font-family: "Bebas Neue";
     color: white;
@@ -151,6 +159,7 @@ html .switch {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        padding: 36px 36px 0 36px;
     }
 
     #development {
@@ -158,15 +167,15 @@ html .switch {
         grid-template-columns: 1fr 1fr;
     }
 
-    #projects {
-        padding: 36px 36px 0 36px;
-    }
-
     #projects div {
         background-color: rgb(255, 255, 255, 0.25);
         border-radius: 25px;
         margin: 10px;
         padding-bottom: 12px;
+    }
+
+    #projects div:hover {
+        border: solid 2px white;
     }
 
     footer {
