@@ -100,10 +100,12 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #B3473B;
+    cursor: pointer;
 }
 
 .switch nav ul li a:hover {
     color: #29124F;
+    cursor: pointer;
 }
 
 footer {
@@ -175,6 +177,10 @@ html .switch {
     }
 
     #projects div:hover {
+        border: solid 2px #B3473B;
+    }
+
+    .switch #projects div:hover {
         border: solid 2px white;
     }
 
