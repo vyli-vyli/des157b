@@ -17,17 +17,33 @@ ul {
 /* end css reset */ 
 
 .hidden {
-    opacity: 0;
+    display: none;
 }
 
 .showing {
-    opacity: 1;
+    display: block;
 }
 
 #threeVideos {
     max-width: 100vw;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
+}
+
+video {
+    max-width: 33vw;
+}
+
+#icon{
+    max-width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+#icon:hover {
+    cursor: pointer; 
 }
 
 #mainVideo {
@@ -36,4 +52,8 @@ ul {
     font-weight: bold;
     text-align: center;
     margin: auto;
+}
+
+#compilation {
+    max-width: 100vw;
 }
