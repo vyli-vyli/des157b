@@ -37,7 +37,7 @@ header {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    z-index: 10;
+    z-index: 10; 
 }
 
 #banner #rays {
@@ -122,6 +122,7 @@ footer a {
 html .switch {
     background: linear-gradient(180deg, rgba(41, 18, 79, 1) 0%, rgba(48, 37, 104, 1) 20%, rgba(88, 65, 137, 1) 60%, rgba(129, 97, 181, 1) 80%, rgba(194, 158, 219, 1) 100%);
 }
+
 
 .switch h3{
     -webkit-text-stroke: 0 transparent;
