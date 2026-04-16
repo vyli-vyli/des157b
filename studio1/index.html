@@ -14,14 +14,14 @@
     <link href="styles.css" rel="stylesheet">
 
     <!-- script -->
-     <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 
     <title>Blockbuster Video</title>
 </head>
 <body>
-    <section id="threeVideos">
+    <section id="mainVideo">
 
-        <video id="video1" muted autoplay playsinline>
+        <video id="video1" class="hidden" preload="metadata" autoplay muted playsinline>
 
             <source src="media/hs_physics.webm" type="video/webm">
             <source src="media/hs_physics.mp4" type="video/mp4">
@@ -30,7 +30,7 @@
 
         </video>
 
-        <video id="video2" muted autoplay playsinline>
+        <video id="video2" class="hidden" preload="metadata" autoplay muted playsinline>
 
             <source src="media/cat.webm" type="video/webm">
             <source src="media/cat.mp4" type="video/mp4">
@@ -39,7 +39,7 @@
 
         </video>
 
-        <video id="video3" muted autoplay playsinline>
+        <video id="video3" class="hidden" preload="metadata" autoplay muted playsinline>
 
             <source src="media/hs_grad.webm" type="video/webm">
             <source src="media/hs_grad.mp4" type="video/mp4">
@@ -51,24 +51,6 @@
     </section>
 
     <svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M32 32C14.3 32 0 46.3 0 64l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-96 0zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c17.7 0 32-14.3 32-32l0-96z"/></svg>
-
-    <section id="mainVideo" class="hidden">
-
-        <p>
-            "The best part about pictures is that even when the people in the photo change, the memory it contains never will." 
-            <div>-Andy Warhol</div>
-        </p>
-
-        <video id="compilation" muted autoplay playsinline>
-
-            <source src="media/complication.webm" type="video/webm">
-            <source src="media/complication.mp4" type="video/mp4">
-
-            <p>Your browser doesn't support HTML5 video. Here is a <a href="media/complication.mp4">link to the video</a>.</p>
-
-        </video>
-
-    </section>
     
 </body>
 </html>

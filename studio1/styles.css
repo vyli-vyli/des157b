@@ -24,8 +24,14 @@ ul {
     display: block;
 }
 
-#threeVideos {
+html, body {
+    height: 100vh;
+}
+
+#mainVideo {
     max-width: 100vw;
+    max-height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
@@ -54,6 +60,47 @@ video {
     margin: auto;
 }
 
+.fade-in {
+    animation: fadeIn 1s forwards; 
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+
 #compilation {
     max-width: 100vw;
+}
+
+#mainVideo.new {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    height: 100%;
+}
+
+#text {
+    max-width: 75%;
+}
+
+.ending {
+    animation: fadeToBlack 1s forwards;
+}
+
+@keyframes fadeToBlack {
+    from {background-color: transparent;}
+    to {background-color: rgb(56, 27, 27);}
 }
