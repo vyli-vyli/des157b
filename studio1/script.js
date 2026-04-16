@@ -8,6 +8,7 @@
     const video1 = document.querySelector("#video1"); 
     const video2 = document.querySelector("#video2"); 
     const video3 = document.querySelector("#video3");
+    const loading = document.querySelector("#loading");
 
     const intervalID = setInterval(checkTime, 1000); 
     const fadeIn = {
@@ -33,6 +34,10 @@
             <p>Your browser doesn't support HTML5 video. Here is a <a href="media/compilation.mp4">link to the video</a>.</p>
 
         </video>`; 
+
+    document.querySelector("video").addEventListener("canplaythrough", function() {
+        loading.className = "hidden";
+    });
 
     fs.addEventListener("click", function() {
         if (!document.fullscreenElement) {
