@@ -1,0 +1,44 @@
+{
+  "data_points": [
+    {
+      "time": "15 min",
+      "gummy_candy_eaten": 5,
+      "mood": "peckish"
+    },
+    {
+      "time": "30 min",
+      "gummy_candy_eaten": 3,
+      "mood": "bored"
+    },
+    {
+      "time": "45 min",
+      "gummy_candy_eaten": 1,
+      "mood": "sleepy"
+    },
+    {
+      "time": "1 hr",
+      "gummy_candy_eaten": 2,
+      "mood": "concentrated (working on hw)"
+    },
+    {
+      "time": "1 hr 15 min",
+      "gummy_candy_eaten": 2,
+      "mood": "concentrated (working on hw)"
+    },
+    {
+      "time": "1 hr 30 min",
+      "gummy_candy_eaten": 4,
+      "mood": "bored"
+    },
+    {
+      "time": "1 hr 45 min",
+      "gummy_candy_eaten": 3,
+      "mood": "sleepy"
+    },
+    {
+      "time": "2 hrs",
+      "gummy_candy_eaten": 2,
+      "mood": "sleepy"
+    }
+  ]
+}
