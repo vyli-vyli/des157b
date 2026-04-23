@@ -3,7 +3,7 @@
     {
       "time": "15 min",
       "gummy_candy_eaten": 5,
-      "mood": "peckish"
+      "mood": "peckish?"
     },
     {
       "time": "30 min",
@@ -13,17 +13,17 @@
     {
       "time": "45 min",
       "gummy_candy_eaten": 1,
-      "mood": "sleepy"
+      "mood": "sleepy..."
     },
     {
       "time": "1 hr",
       "gummy_candy_eaten": 2,
-      "mood": "concentrated (working on hw)"
+      "mood": "studying!"
     },
     {
       "time": "1 hr 15 min",
       "gummy_candy_eaten": 2,
-      "mood": "concentrated (working on hw)"
+      "mood": "studying!"
     },
     {
       "time": "1 hr 30 min",
@@ -33,12 +33,12 @@
     {
       "time": "1 hr 45 min",
       "gummy_candy_eaten": 3,
-      "mood": "sleepy"
+      "mood": "sleepy..."
     },
     {
       "time": "2 hrs",
       "gummy_candy_eaten": 2,
-      "mood": "sleepy"
+      "mood": "sleepy..."
     }
   ]
 }

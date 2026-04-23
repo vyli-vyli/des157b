@@ -25,6 +25,7 @@ picture {
     max-width: 100vw;
     max-height: 100vh;
     z-index: 10;
+    pointer-events: none;
 }
 
 main {
@@ -51,6 +52,26 @@ h1 {
     font-size: "24px";
     font-weight: bold;
     padding: 12px;
+    text-align: center;
+}
+
+#picker {
+    background-color: transparent;
+    border: 3px solid #FCA0A0;
+    border-radius: 5px;
+
+    font-family: "Intel One Mono";
+    font-size: 20px;
+    font-weight: bold;
+    color: #FCA0A0;
+    text-align: center;
+}
+
+#result {
+    font-family: "Intel One Mono";
+    font-size: 36px;
+    font-weight: bold;
+    color: #FCA0A0;
     text-align: center;
 }
 
