@@ -7,8 +7,15 @@
     async function getData() {
         const candiesEaten = await fetch ("data.json"); 
         const data = await candiesEaten.json(); 
+        const mobile = window.matchMedia("(max-width: 650px)").matches; 
+
         globalData = data.data_points; 
-        document.querySelector("#picker").innerHTML = createList(globalData);
+
+        if (mobile) {
+            document.querySelector("#picker").innerHTML = createList(globalData);
+        } else {
+            document.querySelector("#list").innerHTML = outputHTML(globalData); 
+        }
     }
 
     function createList(data) {
@@ -38,7 +45,7 @@
         const mood = globalData[timePicked].mood; 
 
         if (this.innerText === candy) {
-            this.innerHTML = `<p>${mood}</p<`; 
+            this.innerHTML = `<p>${mood}</p>`; 
         } else {
             this.innerHTML = `<p>${candy}</p>`; 
         }
@@ -51,6 +58,45 @@
 
         document.querySelector("#result").innerHTML = html;
     }
+
+    function outputHTML(data) {
+
+        let html = `<div id="times"><h2>times</h2>`; 
+            for (let point of data) {
+                html += `<div><p>${point.time}</p></div>`; 
+            }
+        html += `</div>`; 
+
+        html += `<div id="candies"><h2>candies + mood</h2>`; 
+            for (let point of data) {
+                html += `<div><p>${point.gummy_candy_eaten}</p></div>`;
+            }
+        html += `</div>`; 
+        
+
+        return html; 
+    }
+
+    document.querySelector("#list").addEventListener("click", function(e) {
+        const allCandies = document.querySelectorAll("#candies p"); 
+
+        for (let i = 0; i < allCandies.length; i++) {
+
+            if (e.target === allCandies[i]) {
+                
+                const candy = globalData[i].gummy_candy_eaten.toString(); 
+                const mood = globalData[i].mood; 
+
+                if (e.target.innerText === candy) {
+                    e.target.innerText = mood; 
+                } else {
+                    e.target.innerText = candy; 
+                }
+
+                break; 
+            }
+        }
+    })
 
     getData();
 
