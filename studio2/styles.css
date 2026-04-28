@@ -22,7 +22,8 @@ body {
 
 picture {
     position: absolute; 
-    width: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
     z-index: 10;
     pointer-events: none;
 }
