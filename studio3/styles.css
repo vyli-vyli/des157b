@@ -1,0 +1,67 @@
+h1, h2, h3, p, ul {
+ margin: 0;
+ padding: 0;
+}
+
+img {
+ display: block;
+ max-width: 100%;
+ height: auto;
+ margin: auto;
+}
+
+ul {
+ list-style-type: none;
+}
+
+/* end css reset */ 
+
+body {
+    height: 100vh; 
+    width: 100vw;
+    border: solid 10px #FFC0C0;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#buttons {
+    display: flex;
+}
+
+#sound {
+    border: none;
+    background-color: transparent;
+    padding: 24px;
+}
+
+#credits {
+    font-family: "Silkscreen";
+    font-size: 16px;
+    background-color: #FFD5D5; 
+    color: white; 
+    border-radius: 15px;
+    padding: 12px;
+    margin: 24px 0; 
+}
+
+#credits a {
+    text-decoration: none;
+}
+
+#cat {
+    display: block;
+    margin-top: auto;
+}
+
+.food {
+    position: absolute;
+    z-index: 10;
+    cursor: grab;
+}
+
+.food:active {
+    cursor: grabbing;
+}
