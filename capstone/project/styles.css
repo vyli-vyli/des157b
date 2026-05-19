@@ -1,0 +1,66 @@
+h1, h2, h3, p, ul {
+ margin: 0;
+ padding: 0;
+}
+
+img {
+ display: block;
+ max-width: 100%;
+ height: auto;
+ margin: auto;
+}
+
+ul {
+ list-style-type: none;
+}
+
+/* end css reset */ 
+
+body {
+    background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+    background-size: 100% 8px;
+}
+
+@media screen{
+  body {
+    animation: scanlines infinite 5s linear ;
+  }
+} 
+
+@keyframes scanlines {
+  from {
+    background-position: 0 0;  
+  }
+  to {
+    background-position: 0 10px;
+  }
+}
+
+h1, h2, p {
+    font-family: "Source Code Pro";
+}
+
+#title h1 {
+    font-size: 48px;
+    font-weight: 400;
+    color: white; 
+    
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.2em;
+  background-color: #000;
+  animation: blink 0.75s step-end infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
